@@ -1,0 +1,15 @@
+{
+  "plugins": ["lodash"],
+  "env": {
+    "modern": {
+      "presets": [
+        "@babel/preset-modules"
+      ]
+    },
+    "legacy": {
+      "presets": [
+        "@babel/preset-env"
+      ]
+    }
+  }
+}
