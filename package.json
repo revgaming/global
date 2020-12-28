@@ -1,7 +1,7 @@
 {
   "name": "@revgaming/global",
+  "version": "2.2.1",
   "author": "estagent <estagent@gmail.com>",
-  "version": "1.0.2",
   "description": "application bundle to globalize with ioc-like loader and localizations",
   "main": "src/index.js",
   "homepage": "https://github.com/revgaming/global",
@@ -16,13 +16,13 @@
     "ioc"
   ],
   "dependencies": {
-    "@revgaming/appearance": "^1.0.2",
-    "@revgaming/config": "^1.0.1",
-    "@revgaming/currencies": "^1.0.3",
+    "@revgaming/appearance": "^2.1.2",
+    "@revgaming/config": "^2.1.1",
+    "@revgaming/currencies": "^2.1.2",
     "@revgaming/helpers": "^1.0.3",
-    "@revgaming/languages": "^2.0.1",
-    "@revgaming/location": "^1.0.1",
-    "@revgaming/media": "^1.0.2",
+    "@revgaming/languages": "^2.2.1",
+    "@revgaming/location": "^2.2.1",
+    "@revgaming/media": "^2.1.1",
     "@revgaming/preference": "^1.0.2"
   },
   "devDependencies": {
