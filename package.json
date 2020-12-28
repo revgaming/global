@@ -2,7 +2,7 @@
   "name": "@revgaming/global",
   "author": "estagent <estagent@gmail.com>",
   "version": "1.0.1",
-  "description": "web application bundle",
+  "description": "application bundle to globalize with ioc-like loader and localizations",
   "main": "src/index.js",
   "homepage": "https://github.com/revgaming/global",
   "license": "MIT",
@@ -12,14 +12,15 @@
     "config",
     "locale",
     "laravel",
-    "container"
+    "container",
+    "ioc"
   ],
   "dependencies": {
     "@revgaming/appearance": "^1.0.2",
     "@revgaming/config": "^1.0.1",
     "@revgaming/currencies": "^1.0.3",
     "@revgaming/helpers": "^1.0.3",
-    "@revgaming/languages": "^1.0.2",
+    "@revgaming/languages": "^2.0.1",
     "@revgaming/location": "^1.0.1",
     "@revgaming/media": "^1.0.2",
     "@revgaming/preference": "^1.0.2"
