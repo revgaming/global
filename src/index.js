@@ -1,6 +1,6 @@
 import {loader, loadStringPlugins} from '@revgaming/helpers'
 import {bootLanguages} from '@revgaming/languages'
-import {bootConfig} from '@revgaming/config'
+import {bootConfig, mergeConfigs} from '@revgaming/config'
 import {bootCurrencies} from '@revgaming/currencies'
 import {bootLocation} from '@revgaming/location'
 import {bootAppearance} from '@revgaming/appearance'
@@ -10,6 +10,7 @@ export default function (opts = {}) {
   loadStringPlugins()
   bootConfig(opts)
   return loader({})
+    .load(mergeConfigs)
     .load(bootLanguages(opts))
     .load(bootLocation(opts))
     .load(bootCurrencies(opts))
