@@ -11,7 +11,7 @@ export default function (opts = {}) {
   bootConfig(opts.config)
   return loader()
     .load(mergeConfigs)
-    .load(bootLanguages(opts))
+    .load(bootLanguages(opts.languages))
     .load(bootLocation(opts.timezone))
     .load(bootCurrencies(opts.currencies))
     .load(bootAppearance(opts.darkClass ?? 'dark'))
