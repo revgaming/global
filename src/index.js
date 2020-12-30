@@ -8,12 +8,12 @@ import {isMuted} from '@revgaming/media'
 
 export default function (opts = {}) {
   loadStringPlugins()
-  bootConfig(opts)
-  return loader({})
+  bootConfig(opts.config)
+  return loader()
     .load(mergeConfigs)
     .load(bootLanguages(opts))
-    .load(bootLocation(opts))
-    .load(bootCurrencies(opts))
-    .load(bootAppearance(opts))
+    .load(bootLocation(opts.timezone))
+    .load(bootCurrencies(opts.currencies))
+    .load(bootAppearance(opts.darkClass ?? 'dark'))
     .load(isMuted)
 }
