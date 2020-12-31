@@ -7,7 +7,7 @@ import {bootAppearance} from '@revgaming/appearance'
 import {isMuted} from '@revgaming/media'
 
 export default function (opts = {}) {
-  loadStringPlugins()
+  require('./plugins')
   bootConfig(opts.config)
   return loader()
     .load(mergeConfig)
