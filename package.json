@@ -1,6 +1,6 @@
 {
   "name": "@revgaming/global",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "author": "estagent <estagent@gmail.com>",
   "description": "application bundle to globalize with ioc-like loader and localizations",
   "main": "src/index.js",
@@ -17,17 +17,13 @@
   ],
   "dependencies": {
     "@revgaming/appearance": "^3.0.3",
-    "@revgaming/config": "^2.2.3",
+    "@revgaming/config": "^2.2.4",
     "@revgaming/currencies": "^3.0.6",
     "@revgaming/helpers": "^1.0.5",
-    "@revgaming/languages": "^3.0.4",
+    "@revgaming/languages": "^3.0.6",
     "@revgaming/location": "^3.0.3",
     "@revgaming/media": "^2.1.1",
     "@revgaming/preference": "^1.0.2"
-  },
-  "devDependencies": {
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-modules": "^0.1.4"
   },
   "scripts": {
     "clean": "rm -fr dist/*.js",
