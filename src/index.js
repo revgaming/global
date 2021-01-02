@@ -1,9 +1,10 @@
-import {loader, loadStringPlugins} from '@revgaming/helpers'
+import {loader} from '@revgaming/helpers'
 import {bootLanguages} from '@revgaming/languages'
 import {bootConfig, mergeConfig} from '@revgaming/config'
 import {bootCurrencies} from '@revgaming/currencies'
 import {bootLocation} from '@revgaming/location'
 import {bootAppearance} from '@revgaming/appearance'
+import {bootDevices} from '@revgaming/devices'
 import {isMuted} from '@revgaming/media'
 
 export default function (opts = {}) {
@@ -15,5 +16,6 @@ export default function (opts = {}) {
     .load(bootLocation(opts.timezone))
     .load(bootCurrencies(opts.currencies))
     .load(bootAppearance(opts.darkClass ?? 'dark'))
+    .load(bootDevices)
     .load(isMuted)
 }
