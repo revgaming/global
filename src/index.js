@@ -5,7 +5,7 @@ import {bootCurrencies} from '@revgaming/currencies'
 import {bootLocation} from '@revgaming/location'
 import {bootAppearance} from '@revgaming/appearance'
 import {bootDevice} from '@revgaming/device'
-import {isMuted} from '@revgaming/media'
+import {bootMedia, isMuted} from '@revgaming/media'
 
 export default function (opts = {}) {
   require('./plugins')
@@ -16,6 +16,6 @@ export default function (opts = {}) {
     .load(bootLocation(opts.timezone))
     .load(bootCurrencies(opts.currencies))
     .load(bootAppearance(opts.darkClass ?? 'dark'))
-    .load(bootDevice)
-    .load(isMuted)
+    .load(bootDevice())
+    .load(bootMedia(opts.media))
 }
