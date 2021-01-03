@@ -14,10 +14,10 @@ export default function (opts = {}) {
   return loader()
     .load(mergeConfig)
     .load(bootLanguages(opts.languages))
-    .load(bootLocation(opts.timezone))
+    .load(bootLocation(opts.location))
     .load(bootCurrencies(opts.currencies))
-    .load(bootAppearance(opts.darkClass ?? 'dark'))
-    .load(bootDevice())
+    .load(bootAppearance(opts.appearance))
+    .load(bootDevice(opts.device))
     .load(bootMedia(opts.media))
     .load(bootSession(opts.session))
 }
