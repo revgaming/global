@@ -6,6 +6,7 @@ import {bootLocation} from '@revgaming/location'
 import {bootAppearance} from '@revgaming/appearance'
 import {bootDevice} from '@revgaming/device'
 import {bootMedia, isMuted} from '@revgaming/media'
+import {bootSession} from '@revgaming/session'
 
 export default function (opts = {}) {
   require('./plugins')
@@ -18,4 +19,5 @@ export default function (opts = {}) {
     .load(bootAppearance(opts.darkClass ?? 'dark'))
     .load(bootDevice())
     .load(bootMedia(opts.media))
+    .load(bootSession(opts.session))
 }
