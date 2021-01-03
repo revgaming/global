@@ -4,7 +4,7 @@ import {bootConfig, mergeConfig} from '@revgaming/config'
 import {bootCurrencies} from '@revgaming/currencies'
 import {bootLocation} from '@revgaming/location'
 import {bootAppearance} from '@revgaming/appearance'
-import {bootDevices} from '@revgaming/devices'
+import {bootDevice} from '@revgaming/device'
 import {isMuted} from '@revgaming/media'
 
 export default function (opts = {}) {
@@ -16,6 +16,6 @@ export default function (opts = {}) {
     .load(bootLocation(opts.timezone))
     .load(bootCurrencies(opts.currencies))
     .load(bootAppearance(opts.darkClass ?? 'dark'))
-    .load(bootDevices)
+    .load(bootDevice)
     .load(isMuted)
 }
