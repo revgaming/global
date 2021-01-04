@@ -1,6 +1,6 @@
 {
   "name": "@revgaming/global",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "author": "estagent <estagent@gmail.com>",
   "description": "application bundle to globalize with ioc-like loader and localizations",
   "main": "src/index.js",
@@ -27,7 +27,7 @@
     "@revgaming/media": "^3.0.2",
     "@revgaming/mixins": "^0.0.1",
     "@revgaming/preference": "^1.0.2",
-    "@revgaming/session": "^2.0.1",
+    "@revgaming/session": "^2.0.2",
     "@revgaming/validators": "^0.0.1"
   },
   "scripts": {
