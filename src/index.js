@@ -7,6 +7,7 @@ import {bootAppearance} from '@revgaming/appearance'
 import {bootDevice} from '@revgaming/device'
 import {bootMedia} from '@revgaming/media'
 import {bootSession} from '@revgaming/session'
+import {bootIdentifications} from '@revgaming/identifications'
 export default function (opts = {}) {
   require('./plugins')
   return loader()
@@ -16,7 +17,7 @@ export default function (opts = {}) {
     .load(bootCurrencies(opts.currencies))
     .load(bootAppearance(opts.appearance))
     .load(bootDevice(opts.device))
-    .load(bootTrackers(opts.trackers))
+    .load(bootIdentifications(opts.identifications))
     .load(bootMedia(opts.media))
     .load(bootSession(opts.session))
 }
