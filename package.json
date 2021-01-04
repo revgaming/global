@@ -1,6 +1,6 @@
 {
   "name": "@revgaming/global",
-  "version": "3.1.26",
+  "version": "3.1.27",
   "author": "estagent <estagent@gmail.com>",
   "description": "application bundle to globalize with ioc-like loader and localizations",
   "main": "src/index.js",
