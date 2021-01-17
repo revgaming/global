@@ -7,15 +7,16 @@ import {bootAppearance} from '@revgaming/appearance'
 import {bootMedia} from '@revgaming/media'
 import {bootSession} from '@revgaming/session'
 import {bootIdentity} from '@revgaming/identity'
+
 export default function (opts = {}) {
-  require('./plugins')
-  return loader()
-    .load(bootConfig(opts.config))
-    .load(bootLanguages(opts.languages))
-    .load(bootLocation(opts.location))
-    .load(bootCurrencies(opts.currencies))
-    .load(bootAppearance(opts.appearance))
-    .load(bootMedia(opts.media))
-    .load(bootIdentity(opts.identity))
-    .load(bootSession(opts.session))
+    require('./plugins')
+    return loader()
+        .load(bootConfig(opts.config))
+        .load(bootLanguages(opts.languages))
+        .load(bootLocation(opts.location))
+        .load(bootCurrencies(opts.currencies))
+        .load(bootAppearance(opts.appearance))
+        .load(bootMedia(opts.media))
+        .load(bootIdentity(opts.identity))
+        .load(bootSession(opts.session))
 }
